@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/mine/mine"
+  ],
+  "window": {
+        "navigationBarBackgroundColor": "#2b2e33",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "阿甘学车教练端",
+        "backgroundColor": "#fff",
+        "backgroundTextStyle": "#dark"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#FF9326",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home_off.png",
+        "selectedIconPath": "images/home_on.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/mine_off.png",
+        "selectedIconPath": "images/mine_on.png"
+      }
+    ]
+  }
+}

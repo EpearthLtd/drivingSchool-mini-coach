@@ -1,0 +1,54 @@
+<view class="container">
+    <view class="info-cont">
+        <view class="infoMain">
+            <view class="info-items" bindtap="setPhotoInfo">
+                <text>头像</text>
+                <view class="infotext">
+                    <image wx:if="{{imgUrl!=null}}" class="userinfo-avatar" src="{{imgUrl}}" background-size="cover"></image>
+                    <image wx:else class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+                    <image class="menu-item-arrow" src="../image/arrowright.png"></image>
+                </view>
+            </view>
+            <view class="info-items" bindtap="setName">
+                <text>教练信息</text>
+                <view class="infotext">
+                   <text class="info-motto">{{infoname}}</text>
+                    <image class="menu-item-arrow" src="../image/arrowright.png"></image>
+                </view>
+            </view>
+            <view class="info-items">
+                <text>待开发</text>
+                <view class="infotext">
+                   <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class="info-motto">
+                        <view class="picker">
+                       {{array[index]}}
+                        </view>
+                    </picker>
+                    <image class="menu-item-arrow" src="../image/arrowright.png"></image>
+                </view>
+            </view>
+            <view class="info-items">
+                <text>手机号</text>
+                <view class="infotext">
+                   <text class="info-motto">13812345678</text>
+                </view>
+            </view>
+            <view class="info-items" bindtap="getregion">
+                <text>我的评论</text>
+                <view class="infotext">
+                   <text class="info-motto">评论内容</text>
+                    <image class="menu-item-arrow" src="../image/arrowright.png"></image>
+                </view>
+            </view>
+            <view class="info-items" bindtap="getregion">
+                <text>工作日志</text>
+                <view class="infotext">
+                   <text class="info-motto">日志内容</text>
+                    <image class="menu-item-arrow" src="../image/arrowright.png"></image>
+                </view>
+            </view>
+        </view>
+        
+        <button type="warn"  bindtap="warn" class="buttonExit" > 退出 </button>
+    </view>
+</view>

@@ -1,0 +1,35 @@
+<view class='info'>
+<view class="photoset">
+<image src="../image/photo.png" mode="aspectFill" class="photo">     </image>
+</view>
+<view class="coach">
+<text class="coach1">姓名：</text>
+<text>\n</text>
+<text class="coach1">车牌号：</text>
+<text>\n</text>
+
+<text class="coach1">科目：</text>
+<text>\n</text>
+
+<text class="coach1">电话：</text>
+</view>
+</view>
+<text>\n</text>
+<view class="schedule"> 
+    <text >训练表：</text>
+    <view style='flex-direction:row'> 
+    <text decode="{{true}}">&nbsp;&nbsp;&nbsp;姓名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;  </text>
+    <text space='emsp'>    </text>
+    <text decode="{{true}}">时间&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;   </text>
+    <text>\t\t\t</text>
+    <text decode="{{true}}">&nbsp;&nbsp;电话&nbsp;&nbsp;   </text>
+    <text>\t\t\t</text>
+    </view>
+</view>
+<view style='dispaly:flex:flex-direction:row'>
+<view><text>{{sname}}</text></view>
+<view><text>{{time}}</text></view>
+<view><text>{{tel}}</text></view>
+</view>
+<image src="../image/list1.jpeg" mode="aspectFill" class="list"></image>
+<button class="refresh">刷新</button>

@@ -1,0 +1,49 @@
+.photo{
+  display: block;
+  margin-top: 0px;
+  margin: auto;
+  height: 130px;
+  width:100px;
+  }
+.photoset{
+  height: 130px;
+  width: 100px;
+  display: flex;
+}
+.coach1{
+  font-size: 20px;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+}
+
+.schedule{
+font-weight: bolder;
+text-align: center;
+
+}
+.schedule1{
+  font-weight: bold;
+}
+.coach{
+height: 130px;
+width: 300px;
+font-size: 45rpx;
+
+
+
+flex-direction: column;
+display: inline-block
+}
+.schedule{
+line-height:82rpx;
+width:100%;
+}
+
+
+.refresh{
+  font-size: 10px;
+  height: 20px;
+  width: 50px;
+}
