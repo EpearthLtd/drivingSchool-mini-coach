@@ -4,11 +4,10 @@
     "pages/mine/mine"
   ],
   "window": {
-        "navigationBarBackgroundColor": "#2b2e33",
-        "navigationBarTextStyle": "white",
+        "navigationBarBackgroundColor": "#FFF",
+        "navigationBarTextStyle": "black",
         "navigationBarTitleText": "阿甘学车教练端",
-        "backgroundColor": "#fff",
-        "backgroundTextStyle": "#dark"
+        "backgroundTextStyle": "black"
   },
   "tabBar": {
     "color": "#999999",

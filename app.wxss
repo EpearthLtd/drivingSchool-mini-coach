@@ -1,0 +1,63 @@
+.block {
+  display: block;
+}
+
+.bg-default {
+  background-color: #CCC;
+}
+
+.container {
+  padding: 0 20rpx;
+}
+
+/* 表格样式 */
+.table {
+  margin-top: 20rpx;
+  border: 0px solid darkgray;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+}
+.td {
+    width:40%;
+    justify-content: center;
+    text-align: center;
+}
+.td-30 {
+    width:30%;
+    justify-content: center;
+    text-align: center;
+}
+.td-50 {
+    width:50%;
+    justify-content: center;
+    text-align: center;
+}
+.bg-w{
+  background: snow;
+}
+.bg-g{
+  background: rgba(255, 147, 38, 0.1);
+}
+.th {
+  width: 40%;
+  justify-content: center;
+  background: rgba(255, 147, 38, 0.8);
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+}
+.th-50 {
+  width: 50%;
+  justify-content: center;
+  background: rgba(255, 147, 38, 0.8);
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+}
