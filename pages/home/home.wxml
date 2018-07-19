@@ -3,7 +3,7 @@
 <!--教练信息-->
   <view class='info'>
     <!--教练照片-->
-    <image src="../image/photo.png" mode="aspectFill" class="photo"></image>
+    <image src="../../images/photo.png" mode="aspectFill" class="photo"></image>
     <!--教练详细信息-->
     <view class="coach-info">
       <text class="coach-info-item">姓　名：{{coachInfo[0]}}</text>

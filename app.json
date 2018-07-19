@@ -6,7 +6,7 @@
   "window": {
         "navigationBarBackgroundColor": "#FFF",
         "navigationBarTextStyle": "black",
-        "navigationBarTitleText": "阿甘学车教练端",
+        "navigationBarTitleText": "阿甘教练",
         "backgroundTextStyle": "black"
   },
   "tabBar": {
@@ -17,14 +17,14 @@
       {
         "pagePath": "pages/home/home",
         "text": "首页",
-        "iconPath": "images/home_off.png",
-        "selectedIconPath": "images/home_on.png"
+        "iconPath": "images/form-d.png",
+        "selectedIconPath": "images/form-a.png"
       },
       {
         "pagePath": "pages/mine/mine",
         "text": "我的",
-        "iconPath": "images/mine_off.png",
-        "selectedIconPath": "images/mine_on.png"
+        "iconPath": "images/people-d.png",
+        "selectedIconPath": "images/people-a.png"
       }
     ]
   }
