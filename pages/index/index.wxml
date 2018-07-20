@@ -13,7 +13,7 @@
       <!--地址-->
       <view class="info-item xipu-flex__center">
         <image class="xipu-user__info__image" src="../../images/map-marker-alt.png" background-size="cover"></image>
-        <text class='xipu-text__xx-small__center'>四川大学锦城学院</text>
+        <text class='xipu-text__x-small__center'>四川大学锦城学院</text>
       </view>
       <!--用户头像-->
       <view class="">
@@ -22,7 +22,7 @@
       <!--科目-->
       <view class="info-item xipu-flex__center">
         <image class="xipu-user__info__image" src="../../images/car.png" background-size="cover"></image>
-        <text class='xipu-text__xx-small__center'>科目二</text>
+        <text class='xipu-text__x-small__center'>科目二</text>
       </view>
     </view>
     <view class="weui-flex">
@@ -36,22 +36,37 @@
   </view>
 
 <!--车辆信息-->
-  <view class="page__bd_spacing color-bg-white">
-    <view class="weui-cells__title">教学用车</view>
+  <view class="xipu-margin-top__25 color-bg-white">
     <image class='xipu-image__car' src='../../images/car-default.png'></image>
-    <view class="weui-flex">
-      <view class="weui-flex__item">车型：捷达</view>
-      <view class="weui-flex__item">颜色：白色</view>
-      <view>车牌号：川A6666学</view>
+    <view class="page__bd_spacing weui-flex page__bd">
+      <view class="weui-flex__item">捷达</view>
+      <view class="weui-flex__item">白色</view>
+      <view>川A6666学</view>
     </view>
   </view>
 
   <!--预约信息-->
-  <view class="page__bd_spacing color-bg-white">
-    <view class="weui-cells__title">学员预约</view>
-    <view class="weui-flex">
+  <view class="xipu-margin-top__25">
+    <view class="page__hd page__description__title xipu-text__title__index color-bg-white">学员预约</view>
+    <view class="weui-flex xipu-flex__center page__bd__right xipu-list__mg__bottom color-bg-white">
+      <view class='xipu-placeholder__rectangle'></view>
       <view class="weui-flex__item">张三</view>
       <view class="weui-flex__item">科目二</view>
+      <view><image class='xipu-list__icon' src='../../images/phone.png'></image></view>
+      <view>13540816836</view>
+    </view>
+    <view class="weui-flex xipu-flex__center page__bd__right xipu-list__mg__bottom color-bg-white">
+      <view class='xipu-placeholder__rectangle'></view>
+      <view class="weui-flex__item">张三</view>
+      <view class="weui-flex__item">科目二</view>
+      <view><image class='xipu-list__icon' src='../../images/phone.png'></image></view>
+      <view>13540816836</view>
+    </view>
+    <view class="weui-flex xipu-flex__center page__bd__right xipu-list__mg__bottom color-bg-white">
+      <view class='xipu-placeholder__rectangle'></view>
+      <view class="weui-flex__item">张三</view>
+      <view class="weui-flex__item">科目二</view>
+      <view><image class='xipu-list__icon' src='../../images/phone.png'></image></view>
       <view>13540816836</view>
     </view>
   </view>

@@ -25,7 +25,7 @@
 .xipu-bradge__light__blue {
   padding: 3rpx 10rpx;
   color: #2693FF;
-  font-size: x-small;
+  font-size: 24rpx;
   height: 32rpx;
   border: 1rpx #2693FF solid;
   border-radius: 32rpx
@@ -33,30 +33,41 @@
 
 .xipu-image__car {
   margin: 0 auto;
-  width: 690rpx;
-  height: 388rpx
+  width: 100vw;
+  height: 56.25vw
 }
 
-.xipu-text__xx-small__center {
+.xipu-text__x-small__center {
   display: block;
   text-align: center;
-  font-size: xx-small;
+  font-size: x-small;
+}
+
+.xipu-text__title__index {
+  color: #999;
 }
 
 .xipu-user__photo {
   width: 200rpx;
   height: 200rpx;
   border-radius: 50%;
-  border: 3px solid #FFF;
+  border: 10rpx solid #FFF;
   box-shadow: 0 0 0 0.5px rgba(100,100,100,.2);
   margin-top: 5px
 }
 
 .xipu-user__info__image {
-  width: 80rpx;
-  height: 80rpx;
+  width: 75rpx;
+  height: 75rpx;
   border-radius: 50%;
   border: 3px solid #FFF;
   box-shadow: 0 0 0 0.5px rgba(100,100,100,.2);
-  margin-top: 5px
+  margin-top: 5px;
+  margin-bottom: 10rpx
+}
+
+.xipu-placeholder__rectangle {
+  height: 50rpx;
+  border: 8rpx #FF9326 solid;
+  margin-right: 24rpx
 }

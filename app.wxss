@@ -15,19 +15,26 @@ page{
     font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
 }
 .page__hd {
-    padding: 30rpx;
+    padding: 40rpx;
 }
 .page__bd {
-    padding-bottom: 80rpx;
+    padding-bottom: 20rpx;
 }
 .page__bd_spacing {
-    padding-left: 30rpx;
-    padding-right: 30rpx;
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+}
+.page__bd__right {
+    padding-right: 40rpx;
 }
 
 .page__ft{
     padding-bottom: 20rpx;
     text-align: center;
+}
+
+.page__description__title {
+  padding: 20rpx 40rpx 0;
 }
 
 .page__title {
