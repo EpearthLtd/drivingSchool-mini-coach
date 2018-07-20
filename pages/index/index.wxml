@@ -1,0 +1,43 @@
+<!--
+  学车微信小程序教练端 (https://github.com/EpearthLtd/aganjiaolian)
+  版权所有(C)2018 成都曦璞科技有限公司
+
+  作者author：郑维一
+  公司网站site：www.epearth.com
+-->
+
+<!--教练信息-->
+  <view class="page__bd_spacing color-bg-white">
+    <!--教练信息-->
+    <view class="weui-flex">
+      <view class="weui-flex__item"><view class="placeholder">weui</view></view>
+      <view class="weui-flex__item"><view class="placeholder">weui</view></view>
+      <view class="weui-flex__item"><view class="placeholder">weui</view></view>
+    </view>
+    <view class="weui-flex">
+      <view><view class="placeholder">weui</view></view>
+      <view class="weui-flex__item"><view class="placeholder">weui</view></view>
+      <view><view class="placeholder">weui</view></view>
+    </view>
+  </view>
+
+<!--车辆信息-->
+  <view class="page__bd_spacing color-bg-white">
+    <view class="weui-cells__title">教学用车</view>
+    <image src='../../images/car-default.png'></image>
+    <view class="weui-flex">
+      <view class="weui-flex__item">车型：捷达</view>
+      <view class="weui-flex__item">颜色：白色</view>
+      <view>车牌号：川A6666学</view>
+    </view>
+  </view>
+
+  <!--预约信息-->
+  <view class="page__bd_spacing color-bg-white">
+    <view class="weui-cells__title">学员预约</view>
+    <view class="weui-flex">
+      <view class="weui-flex__item">张三</view>
+      <view class="weui-flex__item">科目二</view>
+      <view>13540816836</view>
+    </view>
+  </view>

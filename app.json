@@ -1,13 +1,14 @@
 {
   "pages": [
-    "pages/home/home",
-    "pages/mine/mine"
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/home/home"
   ],
   "window": {
-        "navigationBarBackgroundColor": "#FFF",
-        "navigationBarTextStyle": "black",
-        "navigationBarTitleText": "阿甘教练",
-        "backgroundTextStyle": "black"
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "阿甘教练",
+    "backgroundTextStyle": "black"
   },
   "tabBar": {
     "color": "#999999",
@@ -15,7 +16,7 @@
     "backgroundColor": "#FFFFFF",
     "list": [
       {
-        "pagePath": "pages/home/home",
+        "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "images/form-d.png",
         "selectedIconPath": "images/form-a.png"
