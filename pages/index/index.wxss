@@ -15,3 +15,33 @@
     line-height: 2.3em;
     color: #cfcfcf;
 }
+
+.xipu-image__car {
+  margin: 0 auto;
+  width: 690rpx;
+  height: 388rpx
+}
+
+.xipu-text__smaller__center {
+  display: block;
+  text-align: center;
+  font-size: smaller;
+}
+
+.xipu-user__photo {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  border: 3px solid #FFF;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+  margin-top: 5px
+}
+
+.xipu-user__add__image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  border: 3px solid #FFF;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+  margin-top: 5px
+}

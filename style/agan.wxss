@@ -6,6 +6,11 @@
  * 公司网站site：www.epearth.com
 */
 
+.xipu-flex__center {
+  justify-content: space-around;
+  align-items: center;
+}
+
 /**
  * Color style
  */
