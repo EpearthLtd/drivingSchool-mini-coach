@@ -6,29 +6,32 @@
   公司网站site：www.epearth.com
 -->
 
-<!--教练信息-->
-  <view class="page__bd_spacing color-bg-white">
+  <!--教练信息-->
+  <view class="page__hd color-bg-white">
     <!--教练信息-->
     <view class="weui-flex xipu-flex__center">
       <!--地址-->
-      <view class="xipu-flex__center">
-        <image class="xipu-user__add__image" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-        <text class='xipu-text__smaller__center'>四川大学锦城学院</text>
+      <view class="info-item xipu-flex__center">
+        <image class="xipu-user__info__image" src="../../images/map-marker-alt.png" background-size="cover"></image>
+        <text class='xipu-text__xx-small__center'>四川大学锦城学院</text>
       </view>
       <!--用户头像-->
       <view class="">
         <image class="xipu-user__photo" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
       </view>
-      <!--科目二-->
-      <view class="xipu-flex__center">
-        <image class="xipu-user__add__image" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-        <text class='xipu-text__smaller__center'>科目二</text>
+      <!--科目-->
+      <view class="info-item xipu-flex__center">
+        <image class="xipu-user__info__image" src="../../images/car.png" background-size="cover"></image>
+        <text class='xipu-text__xx-small__center'>科目二</text>
       </view>
     </view>
     <view class="weui-flex">
-      <view><view class="placeholder">weui</view></view>
-      <view class="weui-flex__item"><view class="placeholder">weui</view></view>
-      <view><view class="placeholder">weui</view></view>
+      <view></view>
+      <view class="weui-flex weui-flex__item xipu-flex__center xipu-flex__column">
+        <text>李教练</text>
+        <text class='xipu-bradge__light__blue'>0年教龄</text>
+      </view>
+      <view></view>
     </view>
   </view>
 

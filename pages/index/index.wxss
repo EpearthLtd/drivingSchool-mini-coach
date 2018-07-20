@@ -16,16 +16,31 @@
     color: #cfcfcf;
 }
 
+.info-item {
+  width: 200rpx;
+  display: flex;
+  flex-direction: column
+}
+
+.xipu-bradge__light__blue {
+  padding: 3rpx 10rpx;
+  color: #2693FF;
+  font-size: x-small;
+  height: 32rpx;
+  border: 1rpx #2693FF solid;
+  border-radius: 32rpx
+}
+
 .xipu-image__car {
   margin: 0 auto;
   width: 690rpx;
   height: 388rpx
 }
 
-.xipu-text__smaller__center {
+.xipu-text__xx-small__center {
   display: block;
   text-align: center;
-  font-size: smaller;
+  font-size: xx-small;
 }
 
 .xipu-user__photo {
@@ -33,15 +48,15 @@
   height: 200rpx;
   border-radius: 50%;
   border: 3px solid #FFF;
-  box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+  box-shadow: 0 0 0 0.5px rgba(100,100,100,.2);
   margin-top: 5px
 }
 
-.xipu-user__add__image {
+.xipu-user__info__image {
   width: 80rpx;
   height: 80rpx;
   border-radius: 50%;
   border: 3px solid #FFF;
-  box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+  box-shadow: 0 0 0 0.5px rgba(100,100,100,.2);
   margin-top: 5px
 }

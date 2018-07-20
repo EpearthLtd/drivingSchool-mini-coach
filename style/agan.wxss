@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+.xipu-flex__column {
+  flex-direction: column
+}
+
 /**
  * Color style
  */
