@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/mine/mine",
-    "pages/home/home"
+    "pages/home/home",
+    "pages/mine/evaluation/evaluation"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FFF",
