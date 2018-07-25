@@ -48,25 +48,11 @@
   <!--预约信息-->
   <view class="xipu-margin-top__25">
     <view class="page__hd page__description__title xipu-text__title__index color-bg-white">学员预约</view>
-    <view class="weui-flex xipu-flex__center page__bd__right xipu-list__mg__bottom color-bg-white">
+    <view class="weui-flex xipu-flex__center page__bd__right xipu-list__mg__bottom color-bg-white" wx:for="{{student}}" wx:key="{{item.id}}">
       <view class='xipu-placeholder__rectangle'></view>
-      <view class="weui-flex__item">张三</view>
-      <view class="weui-flex__item">科目二</view>
+      <view class="weui-flex__item">{{item.name}}</view>
+      <view class="weui-flex__item">{{item.subject}}</view>
       <view><image class='xipu-list__icon' src='../../images/phone.png'></image></view>
-      <view>13540816836</view>
-    </view>
-    <view class="weui-flex xipu-flex__center page__bd__right xipu-list__mg__bottom color-bg-white">
-      <view class='xipu-placeholder__rectangle'></view>
-      <view class="weui-flex__item">张三</view>
-      <view class="weui-flex__item">科目二</view>
-      <view><image class='xipu-list__icon' src='../../images/phone.png'></image></view>
-      <view>13540816836</view>
-    </view>
-    <view class="weui-flex xipu-flex__center page__bd__right xipu-list__mg__bottom color-bg-white">
-      <view class='xipu-placeholder__rectangle'></view>
-      <view class="weui-flex__item">张三</view>
-      <view class="weui-flex__item">科目二</view>
-      <view><image class='xipu-list__icon' src='../../images/phone.png'></image></view>
-      <view>13540816836</view>
+      <view>{{item.phone}}</view>
     </view>
   </view>

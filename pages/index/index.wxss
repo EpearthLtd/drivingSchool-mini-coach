@@ -32,7 +32,7 @@
 }
 
 .xipu-image__car {
-  margin: 0 auto;
+  margin: 0 auto 10rpx;
   width: 100vw;
   height: 56.25vw
 }
@@ -67,7 +67,7 @@
 }
 
 .xipu-placeholder__rectangle {
-  height: 50rpx;
+  height: 80rpx;
   border: 8rpx #FF9326 solid;
   margin-right: 24rpx
 }

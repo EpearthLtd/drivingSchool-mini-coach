@@ -15,7 +15,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    student: [
+      { id: null, name: "张一", subject: "科目二", phone: "13540816836" },
+      { id: null, name: "张二", subject: "科目二", phone: "13540816837" },
+      { id: null, name: "张三", subject: "科目二", phone: "13540816838" },
+    ]
   },
 
   /**
