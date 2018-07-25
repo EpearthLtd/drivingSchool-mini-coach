@@ -68,6 +68,6 @@
 
 .xipu-placeholder__rectangle {
   height: 80rpx;
-  border: 8rpx #FF9326 solid;
+  border: 8rpx #e93737 solid;
   margin-right: 24rpx
 }

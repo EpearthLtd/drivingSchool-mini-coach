@@ -62,12 +62,12 @@
 }
 
 .color-bg-primary {
-  background-color: #FF9326;
+  background-color: #e93737;
   color: #FFF;
 }
 
 .color-primary {
-  color: #FF9326;
+  color: #e93737;
 }
 
 .color-worry {
