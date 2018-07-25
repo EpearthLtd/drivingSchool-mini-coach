@@ -15,6 +15,16 @@
   flex-direction: column
 }
 
+.xipu-icon__gender {
+  margin-left: 20rpx;
+  font-size: small;
+  font-weight: 900
+}
+
+.xipu-flex__center__align {
+  align-items: center
+}
+
 .xipu-list__icon {
   width: 50rpx;
   height: 50rpx;
@@ -51,9 +61,13 @@
   background-color: #FFF;
 }
 
-.color-primary {
+.color-bg-primary {
   background-color: #FF9326;
   color: #FFF;
+}
+
+.color-primary {
+  color: #FF9326;
 }
 
 .color-worry {

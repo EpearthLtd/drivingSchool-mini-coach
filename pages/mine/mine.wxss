@@ -1,3 +1,27 @@
+/*!
+ * 学车微信小程序教练端 (https://github.com/EpearthLtd/aganjiaolian)
+ * 版权所有(C)2018 成都曦璞科技有限公司
+ *
+ * 作者author：郑维一、张新煜
+ * 公司网站site：www.epearth.com
+*/
+
+.xipu-user__photo {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  margin-right: 40rpx;
+}
+
+.xipu-user__name {
+  font-size: medium;
+}
+
+.xipu-user__add {
+  font-size: smaller;
+  color: #999;
+}
+
 .info-cont{
     border-top:solid 1px #f0f0f0;
     padding-top: 30rpx;
