@@ -1,0 +1,13 @@
+<!-- 
+  学车管理平台微信小程序学车管理平台微信小程序教练端 (https://github.com/EpearthLtd/drivingSchool-mini-coach)
+  版权所有(C)2018 成都曦璞科技有限公司
+ 
+  作者author：郑维一
+  公司网站site：www.epearth.com
+-->
+
+<view class='container'>
+  <icon type='warn' size="120"></icon>
+  <text class="information">功能开发中，暂未开放</text>
+  <text class="information">敬请期待</text>
+</view>

@@ -1,0 +1,99 @@
+/*!
+ * 学车管理平台微信小程序教练端 (https://github.com/EpearthLtd/drivingSchool-mini-coach)
+ * 版权所有(C)2018 成都曦璞科技有限公司
+ *
+ * 作者author：郑维一
+ * 公司网站site：www.epearth.com
+*/
+.container {
+  flex-direction:column;
+  display: flex;
+  padding: 0;
+  align-items: center;
+}
+
+.carousels {
+  height: 48.1vw;
+  width: 100vw;
+}
+
+.carousels image {
+  height: 100%;
+  width: 100%;
+}
+
+.view-button-bg {
+  margin: 20rpx 0;
+  padding: 30rpx 15rpx;
+  background-color: white;
+  align-items: center;
+  overflow: hidden;
+}
+
+.view-button {
+  width: 180rpx;
+  text-align: center;
+  font-size: small;
+  float: left;
+}
+
+.view-price-bg{
+  margin: 1rpx 0;
+  padding: 30rpx 20rpx;
+  background-color: white;
+  overflow: hidden;
+}
+
+.view-icon-right {
+  height: 50%;
+  float: right;
+}
+
+.text-icon-right {
+  margin-right: 10rpx 10rpx 10rpx 0;
+  color: #CCC;
+}
+
+.image-title {
+  width: 132rpx;
+  height: 132rpx;
+  margin: 0 30rpx 0 40rpx;
+  float: left;
+}
+
+.image-button {
+  display: block;
+  margin: 0 auto;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.text-price {
+  border-radius: 10rpx;
+  padding: 5rpx 10rpx;
+  margin-left: 140rpx;
+}
+
+.text-title {
+  float: left;
+}
+
+.view-text-content {
+  margin-top: 15rpx;
+  float: left;
+  width: 460rpx;
+}
+
+.text-content {
+  font-size: small;
+  color: #CCC;
+}
+
+text-button {
+  margin-top: 20rpx;
+  text-align: center;
+}
+
+.button-primary {
+  margin: 15rpx 40rpx;
+}

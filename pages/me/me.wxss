@@ -1,0 +1,98 @@
+/*!
+ * 学车管理平台微信小程序教练端 (https://github.com/EpearthLtd/drivingSchool-mini-coach)
+ * 版权所有(C)2018 成都曦璞科技有限公司
+ *
+ * 作者author：郑维一
+ * 公司网站site：www.epearth.com
+*/
+ 
+.userinfo-bg {
+  height: 400rpx;
+  padding: 20rpx 60rpx;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.userinfo-out {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.userinfo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.userinfo-hover {
+  background-color: #FFF;
+}
+
+.userinfo-info {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.userinfo-avatar {
+  flex-shrink: 0;
+}
+
+.user-profile-photo {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+.userNickName {
+  font-size: xx-large;
+  margin-right: 20rpx;
+}
+
+.user-realname {
+  display: inline-block;
+  color: #999;
+  font-size: small;
+  margin-right: 20rpx;
+}
+
+.userStatus {
+  display: inline-block;
+  border-radius: 10rpx;
+  padding: 5rpx 10rpx;
+  font-size: x-small;
+  margin-right: 20rpx;
+}
+
+.userTrainStatus {
+  display: inline-block;
+  border-radius: 10rpx;
+  padding: 5rpx 10rpx;
+  font-size: x-small;
+  margin-right: 20rpx;
+}
+
+.button-text {
+  color: #333;
+}
+
+.icon-primary {
+  background-color: #e93737;
+  color: #FFF;
+}
+
+.icon-gray {
+  background-color: #999;
+  color: #FFF;
+}
+
+.icon-pass {
+  background-color: rgb(9, 187, 7);
+  color: #FFF;
+}

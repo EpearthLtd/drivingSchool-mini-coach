@@ -1,0 +1,35 @@
+<!-- 
+  学车管理平台微信小程序教练端 (https://github.com/EpearthLtd/drivingSchool-mini-coach)
+  版权所有(C)2018 成都曦璞科技有限公司
+ 
+  作者author：郑维一
+  公司网站site：www.epearth.com
+-->
+
+<!--轮播图-->
+<swiper class='carousels' indicator-dots='true' autoplay='true' interval='3000' duration='1000'>
+  <block wx:for="{{carousels}}" wx:for-index="index" wx:key="index" >
+    <navigator url='../web/web?url={{rootDomain}}{{item.url}}'>
+      <swiper-item>
+        <image src='{{item.src}}' class='slide-image' mode='aspectFill'/>
+      </swiper-item>
+    </navigator>
+  </block>
+</swiper>
+
+<view class='col-100 wrapper'>
+<view class='cell'>
+  <view class='buttonMain wrapper color-bg-primary' bindtap='clickReservation'>
+    <text class='center cell'>预约管理</text>
+  </view>
+</view>
+  <view class='button-bg-gray includeFloat'>
+    <view class='button wrapper {{item.classWrapper}}' wx:for='{{button}}' wx:key='button' bindtap='{{item.bindTap}}'>
+      <view class='center cell'>
+        <image class='buttonImage center' src='{{item.image}}'></image>
+        <text>{{item.text}}</text>
+      </view>
+    </view>
+  </view>
+
+</view>
