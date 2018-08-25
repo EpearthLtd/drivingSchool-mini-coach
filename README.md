@@ -1,6 +1,10 @@
-# 驾校学车微信小程序（教练端）
+# 驾校学车训练约车微信小程序（教练端）
 这是一款用于学车平台为学员提供学车报名、预约练车服务的微信小程序  
 This is a mini program project of WeChat
+
+![license](https://img.shields.io/github/license/EpearthLtd/drivingSchool-mini-coach.svg)
+
+[小程序学员端](https://github.com/EpearthLtd/drivingSchool-mini-student)
 
 ## 开发说明
 小程序开发中，尚未成型
