@@ -10,3 +10,8 @@
    background-color: #FFF;
    padding: 25rpx 60rpx;
  }
+
+ .cell-icon {
+   width: 1rem;
+   height: 1rem
+ }

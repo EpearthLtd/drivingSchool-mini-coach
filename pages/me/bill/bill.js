@@ -13,8 +13,8 @@ Page({
    */
   data: {
     trainingBill: [
-      { id: "0", className: "", licenseTypeName: "C1", subject: "科目三", status: "已完成", datetime: "2018年06月16日 14:03", coachName: "李师傅" },
-      { id: "1", className: "", licenseTypeName: "C1", subject: "科目二", status: "已完成", datetime: "2018年06月14日 15:01", coachName: "张师傅" }
+      { id: "0", licenseTypeName: "C1", subjectName: "科目三", date: "2018-06-16 ", startTime: "14:03", coachId: "00280021002", students: 3, trainingStatus: "已完成" },
+      { id: "1", licenseTypeName: "C1", subjectName: "科目二", date: "2018-06-14 ", startTime: "14:03", coachId: "00280021003", students: 2, trainingStatus: "已完成" }
     ],
   },
 

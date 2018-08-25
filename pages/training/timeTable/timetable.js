@@ -16,9 +16,23 @@ Page({
    */
   data: {
     trainingList: [
-      { id: '19', licenceType: 5, subject: 1, date: '2018-08-21', startTime: '14:00', endTime: '15:00', duration: '45', flex: '15', students: '1', trainingStatus: 3, add: 'XX街XX号', coachName: '王教练', licencePlate: '川AV110学', coachTel: '13000000000'},
-      { id: '19', licenceType: 5, subject: 1, date: '2018-08-22', startTime: '15:00', endTime: '16:00', duration: '45', flex: '15', students: '1', trainingStatus: 0, add: 'XX街XX号', coachName: '王教练', licencePlate: '川AV110学', coachTel: '13000000000' },
-      { id: '19', licenceType: 5, subject: 2, date: '2018-08-23', startTime: '14:00', endTime: '15:00', duration: '45', flex: '15', students: '1', trainingStatus: 1, add: 'XX街XX号', coachName: '王教练', licencePlate: '川AV110学', coachTel: '13000000000' }
+      { id: '19', licenceType: 5, subject: 1, date: '2018-08-21', startTime: '14:00', endTime: '15:00', duration: '45', flex: '15', students: '1', trainingStatus: 3, add: 'XX街XX号', coachName: '王教练', licencePlate: '川AV110学', coachTel: '13000000000', students: [
+        { studentName: "郑维一", tel: "13500000000" }, 
+        { studentName: "郑维二", tel: "13500000000" }, 
+        { studentName: "郑维三", tel: "13500000000" },
+      ] },
+      {
+        id: '19', licenceType: 5, subject: 1, date: '2018-08-22', startTime: '15:00', endTime: '16:00', duration: '45', flex: '15', students: '1', trainingStatus: 0, add: 'XX街XX号', coachName: '王教练', licencePlate: '川AV110学', coachTel: '13000000000', students: [
+          { studentName: "郑维一", tel: "13500000000" },
+          { studentName: "郑维二", tel: "13500000000" },
+          { studentName: "郑维三", tel: "13500000000" },
+        ] },
+      {
+        id: '19', licenceType: 5, subject: 2, date: '2018-08-23', startTime: '14:00', endTime: '15:00', duration: '45', flex: '15', students: '1', trainingStatus: 1, add: 'XX街XX号', coachName: '王教练', licencePlate: '川AV110学', coachTel: '13000000000', students: [
+          { studentName: "郑维一", tel: "13500000000" },
+          { studentName: "郑维二", tel: "13500000000" },
+          { studentName: "郑维三", tel: "13500000000" },
+        ] }
     ]
   },
 

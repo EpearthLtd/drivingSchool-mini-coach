@@ -11,11 +11,10 @@
   <view class='card' wx:for='{{trainingBill}}' wx:key='{{item.id}}' data-id='{{item.id}}' bindtap='clickBill'>
     <view class='block mg-bottom-20'>
       <text class='{{item.className}}'>{{item.licenseTypeName}} {{item.subjectName}}训练</text>
-      <text class='icon-right {{item.className}}'>{{item.status}} 〉</text>
+      <text class='icon-right {{item.className}}'>{{item.trainingStatus}} 〉</text>
     </view>
     <view class='block color-gray'>
-      <text class='block mg-bottom-10 font-small'>{{item.datetime}}</text>
-      <text class='block font-small'>{{item.coachName}}</text>
+      <text class='mg-bottom-10 font-small'>{{item.date}} {{item.startTime}}　{{item.students}}学员</text>
     </view>
   </view>
 </view>

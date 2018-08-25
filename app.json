@@ -9,8 +9,6 @@
     "pages/poster/notice/notice",
     "pages/poster/question/question",
     "pages/supportInfo/about/about",
-    "pages/ad/ad1/ad1",
-    "pages/ad/ad2/ad2",
     "pages/poster/automatic/automatic",
     "pages/poster/manual/manual",
     "pages/training/timeTable/timetable",
