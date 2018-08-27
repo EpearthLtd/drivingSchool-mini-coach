@@ -18,30 +18,27 @@
 </view>
 
 <swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
-    <swiper-item>
-      <view class='center'>
-        <text class='xipu-background-placeholder__text'>不能预约今天的课程\n请至少提前一天预约</text>
-      </view>
-    </swiper-item>
     <block wx:for="{{classList}}" wx:key="{{index}}">
       <swiper-item>
         <scroll-view scroll-y class='scrollers'>
-          <radio-group bindchange="radioChange">
-            <view class='card includeFloat {{item.cardClass}}' wx:for='{{classList[index]}}' wx:key='timeTable'>
-              <label>
-              <view class='radio'>
-                <radio disabled='{{item.students>=3?true:false}}' value="{{index}}" checked='{{item.checked}}'></radio>
+            <view class='card includeFloat weui-flex' wx:for='{{classList[index]}}' wx:key='timeTable'>
+              <view class='xipu-text__x-small flex-hd'>
+                <text class='xipu-text__medium'>{{item.licenceName}}</text>
+                <text>{{item.startTime}} - {{item.endTime}}</text>
+                <text>{{item.subjectName}}</text>
               </view>
-              <view class='time-item'>
-                <text class='fl-right color-{{item.students>=3?"gray":"pass"}}'>{{item.students>=3?'已约满':'可预约'}}</text>
-                <text>{{item.startTime}} - {{item.endTime}} {{item.subjectName}}\n</text>
-                <text class='font-small color-gray'>训练{{item.duration}}分钟　弹性{{item.flex}}分钟　</text>
-                <text wx:if="{{item.students>=3?true:false}}"></text>
-                <text wx:else class='font-small color-gray block-inline'>{{item.students}}人已预约</text>
+              <view class='weui-flex__item flex-bd'>
+                <block wx:if="{{item.student[0]==null}}">
+                  <text>暂无预约</text>
+                </block>
+                <block wx:else>
+                  <text class='student student__{{item.gender==1?"female":"male"}}' wx:for="{{item.student}}" wx:key="{{item.id}}">{{item.name}}</text>
+                </block>
               </view>
-              </label>
+              <view class='flex-ft'>
+                <button class="button-edit" size="mini">编辑</button>
+              </view>
             </view>
-          </radio-group>
         </scroll-view>
       </swiper-item>
     </block>

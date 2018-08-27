@@ -15,3 +15,7 @@
    width: 1rem;
    height: 1rem
  }
+
+ .weui-cell {
+	padding: 20rpx 30rpx 20rpx 30rpx;
+}

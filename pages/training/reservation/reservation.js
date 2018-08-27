@@ -15,35 +15,72 @@ var util = require('../../../utils/util.js');
 
 Page({
   data: {
-    currentTab: 1,
+    currentTab: 0,
     dateList: [],
     classList: [
       [
-        { id: '1', licenceType: 5, subject: 1, startTime: '08:00', endTime: '09:00', duration: '45', flex: '15', students: '2', cardClass: '', checked: '' },
-        { id: '2', licenceType: 5, subject: 1, startTime: '09:00', endTime: '10:00', duration: '45', flex: '15', students: '3', cardClass: '', checked: '' },
-        { id: '3', licenceType: 5, subject: 1, startTime: '10:00', endTime: '11:00', duration: '45', flex: '15', students: '2', cardClass: '', checked: '' },
-        { id: '4', licenceType: 5, subject: 1, startTime: '11:00', endTime: '12:00', duration: '45', flex: '15', students: '0', cardClass: '', checked: true },
-        { id: '5', licenceType: 5, subject: 1, startTime: '14:00', endTime: '15:00', duration: '45', flex: '15', students: '3', cardClass: '', checked: '' },
-        { id: '6', licenceType: 5, subject: 1, startTime: '15:00', endTime: '16:00', duration: '45', flex: '15', students: '3', cardClass: '', checked: '' },
-        { id: '7', licenceType: 5, subject: 1, startTime: '16:00', endTime: '17:00', duration: '45', flex: '15', students: '1', cardClass: '', checked: '' }
+        { id: '1', licenceType: 5, subject: 1, startTime: '08:00', endTime: '09:00', duration: '45', flex: '15', students: '2', student: [
+          { id: "111", name: "男", gender: 0 },
+          { id: "222", name: "女", gender: 1 }
+        ] },
+        {
+          id: '2', licenceType: 5, subject: 1, startTime: '09:00', endTime: '10:00', duration: '45', flex: '15', students: '3', student: [
+            { id: "111", name: "看看四个", gender: 0 },
+            { id: "111", name: "字的名字", gender: 1 },
+            { id: "222", name: "到底多长", gender: 1 }
+          ] },
+        {
+          id: '3', licenceType: 5, subject: 1, startTime: '10:00', endTime: '11:00', duration: '45', flex: '15', students: '2', student: [
+            { id: "111", name: "维一", gender: 0 },
+            { id: "222", name: "郑维二", gender: 1 }
+          ] },
+        {
+          id: '4', licenceType: 5, subject: 1, startTime: '11:00', endTime: '12:00', duration: '45', flex: '15', students: '0', student: [] },
+        {
+          id: '5', licenceType: 5, subject: 1, startTime: '14:00', endTime: '15:00', duration: '45', flex: '15', students: '3', student: [
+            { id: "111", name: "郑维一", gender: 0 },
+            { id: "222", name: "郑维二", gender: 1 },
+            { id: "222", name: "郑维三男", gender: 0 }
+          ] },
+        {
+          id: '6', licenceType: 5, subject: 1, startTime: '15:00', endTime: '16:00', duration: '45', flex: '15', students: '3', student: [
+            { id: "111", name: "郑维一", gender: 0 },
+            { id: "222", name: "郑维二男", gender: 0 },
+            { id: "222", name: "郑维三女", gender: 1 }
+          ] },
+        {
+          id: '7', licenceType: 5, subject: 1, startTime: '16:00', endTime: '17:00', duration: '45', flex: '15', students: '1', student: [
+            { id: "111", name: "郑维二", gender: 1 }
+          ] }
       ],
       [
-        { id: '8', licenceType: 5, subject: 1, startTime: '08:00', endTime: '09:00', duration: '45', flex: '15', students: '0', cardClass: '', checked: '' },
-        { id: '9', licenceType: 5, subject: 1, startTime: '09:00', endTime: '10:00', duration: '45', flex: '15', students: '1', cardClass: '', checked: '' },
-        { id: '10', licenceType: 5, subject: 1, startTime: '10:00', endTime: '11:00', duration: '45', flex: '15', students: '3', cardClass: '', checked: '' },
-        { id: '11', licenceType: 5, subject: 1, startTime: '11:00', endTime: '12:00', duration: '45', flex: '15', students: '2', cardClass: '', checked: '' },
-        { id: '12', licenceType: 5, subject: 1, startTime: '14:00', endTime: '15:00', duration: '45', flex: '15', students: '1', cardClass: '', checked: '' },
-        { id: '13', licenceType: 5, subject: 1, startTime: '15:00', endTime: '16:00', duration: '45', flex: '15', students: '3', cardClass: '', checked: '' },
-        { id: '14', licenceType: 5, subject: 1, startTime: '16:00', endTime: '17:00', duration: '45', flex: '15', students: '0', cardClass: '', checked: '' }
+        { id: '8', licenceType: 5, subject: 1, startTime: '08:00', endTime: '09:00', duration: '45', flex: '15', students: '0', student: [] },
+        { id: '9', licenceType: 5, subject: 1, startTime: '09:00', endTime: '10:00', duration: '45', flex: '15', students: '1', student: [
+          { id: "111", name: "郑维二", gender: 1 }
+        ] },
+        { id: '10', licenceType: 5, subject: 1, startTime: '10:00', endTime: '11:00', duration: '45', flex: '15', students: '3' },
+        { id: '11', licenceType: 5, subject: 1, startTime: '11:00', endTime: '12:00', duration: '45', flex: '15', students: '2' },
+        { id: '12', licenceType: 5, subject: 1, startTime: '14:00', endTime: '15:00', duration: '45', flex: '15', students: '1' },
+        { id: '13', licenceType: 5, subject: 1, startTime: '15:00', endTime: '16:00', duration: '45', flex: '15', students: '3' },
+        { id: '14', licenceType: 5, subject: 1, startTime: '16:00', endTime: '17:00', duration: '45', flex: '15', students: '0' }
       ],
       [
-        { id: '15', licenceType: 5, subject: 1, startTime: '08:00', endTime: '09:00', duration: '45', flex: '15', students: '0', cardClass: '', checked: '' },
-        { id: '16', licenceType: 5, subject: 1, startTime: '09:00', endTime: '10:00', duration: '45', flex: '15', students: '1', cardClass: '', checked: '' },
-        { id: '17', licenceType: 5, subject: 1, startTime: '10:00', endTime: '11:00', duration: '45', flex: '15', students: '0', cardClass: '', checked: '' },
-        { id: '18', licenceType: 5, subject: 1, startTime: '11:00', endTime: '12:00', duration: '45', flex: '15', students: '0', cardClass: '', checked: '' },
-        { id: '19', licenceType: 5, subject: 1, startTime: '14:00', endTime: '15:00', duration: '45', flex: '15', students: '1', cardClass: '', checked: '' },
-        { id: '20', licenceType: 5, subject: 1, startTime: '15:00', endTime: '16:00', duration: '45', flex: '15', students: '1', cardClass: '', checked: '' },
-        { id: '21', licenceType: 5, subject: 1, startTime: '16:00', endTime: '17:00', duration: '45', flex: '15', students: '0', cardClass: '', checked: '' }
+        { id: '15', licenceType: 5, subject: 1, startTime: '08:00', endTime: '09:00', duration: '45', flex: '15', students: '0' },
+        { id: '16', licenceType: 5, subject: 1, startTime: '09:00', endTime: '10:00', duration: '45', flex: '15', students: '1' },
+        { id: '17', licenceType: 5, subject: 1, startTime: '10:00', endTime: '11:00', duration: '45', flex: '15', students: '0' },
+        { id: '18', licenceType: 5, subject: 1, startTime: '11:00', endTime: '12:00', duration: '45', flex: '15', students: '0' },
+        { id: '19', licenceType: 5, subject: 1, startTime: '14:00', endTime: '15:00', duration: '45', flex: '15', students: '1' },
+        { id: '20', licenceType: 5, subject: 1, startTime: '15:00', endTime: '16:00', duration: '45', flex: '15', students: '1' },
+        { id: '21', licenceType: 5, subject: 1, startTime: '16:00', endTime: '17:00', duration: '45', flex: '15', students: '0' }
+      ],
+      [
+        { id: '15', licenceType: 5, subject: 1, startTime: '08:00', endTime: '09:00', duration: '45', flex: '15', students: '0' },
+        { id: '16', licenceType: 5, subject: 1, startTime: '09:00', endTime: '10:00', duration: '45', flex: '15', students: '1' },
+        { id: '17', licenceType: 5, subject: 1, startTime: '10:00', endTime: '11:00', duration: '45', flex: '15', students: '0' },
+        { id: '18', licenceType: 5, subject: 1, startTime: '11:00', endTime: '12:00', duration: '45', flex: '15', students: '0' },
+        { id: '19', licenceType: 5, subject: 1, startTime: '14:00', endTime: '15:00', duration: '45', flex: '15', students: '1' },
+        { id: '20', licenceType: 5, subject: 1, startTime: '15:00', endTime: '16:00', duration: '45', flex: '15', students: '1' },
+        { id: '21', licenceType: 5, subject: 1, startTime: '16:00', endTime: '17:00', duration: '45', flex: '15', students: '0' }
       ]
     ]
   },

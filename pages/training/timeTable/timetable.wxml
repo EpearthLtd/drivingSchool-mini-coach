@@ -17,7 +17,7 @@
     <text class='block mg-bottom-10'>地址：{{item.add}}</text>
   </view>
   <view class='weui-cells weui-cells_after-title'>
-    <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{item.students}}" wx:key="{{item.id}}">
+    <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{item.students}}" wx:key="{{item.id}}" bindtap='callStudent' data-tel='{{item.tel}}'>
       <view class="weui-cell__bd">{{item.studentName}}</view>
       <view class="weui-cell__ft">
         <image class='cell-icon' src='../../../images/phone-gray.svg'></image>

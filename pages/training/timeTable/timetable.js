@@ -16,22 +16,22 @@ Page({
    */
   data: {
     trainingList: [
-      { id: '19', licenceType: 5, subject: 1, date: '2018-08-21', startTime: '14:00', endTime: '15:00', duration: '45', flex: '15', students: '1', trainingStatus: 3, add: 'XX街XX号', coachName: '王教练', licencePlate: '川AV110学', coachTel: '13000000000', students: [
+      { id: '19', licenceType: 5, subject: 1, date: '2018-08-21', startTime: '14:00', endTime: '15:00', duration: '45', flex: '15', students: '1', trainingStatus: 3, add: 'XX街XX号', students: [
         { studentName: "郑维一", tel: "13500000000" }, 
-        { studentName: "郑维二", tel: "13500000000" }, 
-        { studentName: "郑维三", tel: "13500000000" },
+        { studentName: "郑维二", tel: "13500000002" }, 
+        { studentName: "郑维三", tel: "13500000030" },
       ] },
       {
-        id: '19', licenceType: 5, subject: 1, date: '2018-08-22', startTime: '15:00', endTime: '16:00', duration: '45', flex: '15', students: '1', trainingStatus: 0, add: 'XX街XX号', coachName: '王教练', licencePlate: '川AV110学', coachTel: '13000000000', students: [
-          { studentName: "郑维一", tel: "13500000000" },
-          { studentName: "郑维二", tel: "13500000000" },
-          { studentName: "郑维三", tel: "13500000000" },
+        id: '19', licenceType: 5, subject: 1, date: '2018-08-22', startTime: '15:00', endTime: '16:00', duration: '45', flex: '15', students: '1', trainingStatus: 0, add: 'XX街XX号', students: [
+          { studentName: "郑维四", tel: "13500000340" },
+          { studentName: "郑维五", tel: "13500000045" },
+          { studentName: "郑维六", tel: "13500005600" },
         ] },
       {
-        id: '19', licenceType: 5, subject: 2, date: '2018-08-23', startTime: '14:00', endTime: '15:00', duration: '45', flex: '15', students: '1', trainingStatus: 1, add: 'XX街XX号', coachName: '王教练', licencePlate: '川AV110学', coachTel: '13000000000', students: [
-          { studentName: "郑维一", tel: "13500000000" },
-          { studentName: "郑维二", tel: "13500000000" },
-          { studentName: "郑维三", tel: "13500000000" },
+        id: '19', licenceType: 5, subject: 2, date: '2018-08-23', startTime: '14:00', endTime: '15:00', duration: '45', flex: '15', students: '1', trainingStatus: 1, add: 'XX街XX号', students: [
+          { studentName: "郑维七", tel: "13500006000" },
+          { studentName: "郑维八", tel: "13506600000" },
+          { studentName: "郑维九", tel: "13500078000" },
         ] }
     ]
   },
@@ -163,8 +163,8 @@ Page({
   /**
    * 拨打教练电话
    */
-  callCoach: function (event) {
-    console.log('拨打教练电话' + event.currentTarget.dataset.tel)
+  callStudent: function (event) {
+    console.log('拨打学员电话' + event.currentTarget.dataset.tel)
     wx.makePhoneCall({
       phoneNumber: event.currentTarget.dataset.tel,
     })

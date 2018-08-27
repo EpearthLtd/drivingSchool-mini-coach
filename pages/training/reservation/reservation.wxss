@@ -7,30 +7,30 @@
 */
 
 .swiper-tab{
-    padding: 10rpx;
-    background-color: #FFF;
-    font-size: small;
-    text-align: center;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
+  padding: 10rpx;
+  background-color: #FFF;
+  font-size: small;
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
 }
 .swiper-tab-item{
-    margin: 10rpx;
-    padding: 15rpx 0;
-    flex: 1;
-    color:#434343;
-    background-color: #EEE;
-    border-radius: 10rpx;
+  margin: 10rpx;
+  padding: 15rpx 0;
+  flex: 1;
+  color:#434343;
+  background-color: #EEE;
+  border-radius: 10rpx;
 }
 .active{
-    color: #EEE;
-    background-color:#e93737;
-    box-shadow: 0 4rpx 10rpx 5rpx rgba(233, 55, 55, .3);
-    transition: all .3s;
-    -moz-transition: all .3s; /* Firefox 4 */
-    -webkit-transition: all .3s; /* Safari 和 Chrome */
-    -o-transition: all .3s; /* Opera */
+  color: #EEE;
+  background-color:#e93737;
+  box-shadow: 0 4rpx 10rpx 5rpx rgba(233, 55, 55, .3);
+  transition: all .3s;
+  -moz-transition: all .3s; /* Firefox 4 */
+  -webkit-transition: all .3s; /* Safari 和 Chrome */
+  -o-transition: all .3s; /* Opera */
 }
 
 /* 展示滑动模块 */
@@ -39,24 +39,60 @@ swiper{
   height: 87.5vh;
   overflow-x: hidden;
 }
- .radio {
-   margin-top: 30rpx;
-   float: left;
- }
 
- .time-item {
-   width: 550rpx;
-   float: right;
- }
+/* 卡片内组件 */
+.flex-hd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20rpx;
+  margin-right: 20rpx;
+  border-right: 1rpx #EEE solid
+}
+
+.flex-bd {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center
+}
+
+.flex-ft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20rpx;
+}
+
+.student {
+  margin-right: 15rpx
+}
+
+.student__male {
+  border-bottom: rgb(0,160,230) 4rpx solid;
+}
+
+.student__female {
+  border-bottom: rgb(230,0,160) 4rpx solid;
+}
+
+.button-edit {
+  background-color: #FFF;
+}
+
+.button-edit::after {
+  border-radius: 1000rpx;
+}
 
  /* 滑动区域 */
 .scrollers, .scrollView {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 /* 覆盖全局card边距 */
 .card {
-  padding: 20rpx 40rpx;
+  padding: 20rpx;
 }
