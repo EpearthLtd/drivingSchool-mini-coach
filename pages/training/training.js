@@ -143,22 +143,9 @@ Page({
    */
   clickContactInstructor: function() {
     console.log('用户点击“' + this.data.button[1].text + '”按钮')
-    if (app.globalData.coachInfo==null) {
-      console.log('用户指定教练，弹出提示信息'),
-        this.setData({ messageTitle: "请指定教练后再联系", message: "不然我不知道该找谁啊" }),
-      this.showMessage()
-    } else {
-      console.log('用户指定教练，拨打教练电话')
-      if (app.globalData.coachInfo.tel!=null) {
-        wx.makePhoneCall({
-          phoneNumber: app.globalData.coachInfo.tel
-        })
-      } else {
-        console.log('未获取到教练手机号，弹出提示信息'),
-          this.setData({ messageTitle: "未获取到" + app.globalData.coachInfo.name + "的手机号", message: "请在“我>关于>意见反馈>其他异常”中提交反馈\n\n教练姓名：" + app.globalData.coachInfo.name + "\n教练编号：" + app.globalData.coachInfo.id + "\n问题描述：未获取到手机号" }),
-          this.showMessage()
-      }
-    }
+    wx.navigateTo({
+      url: '../me/students/students',
+    })
   },
 
   /**

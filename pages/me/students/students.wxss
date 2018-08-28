@@ -5,12 +5,14 @@
  * 作者author：郑维一
  * 公司网站site：www.epearth.com
 */
- 
- .section {
-   background-color: #FFF;
-   padding: 25rpx 60rpx;
- }
 
- .weui-cell {
-	padding: 20rpx 30rpx 20rpx 30rpx;
+/* 重写全局样式 */
+.xipu-card__default {
+  margin-bottom: 15rpx;
 }
+
+.xipu-icon__right {
+  margin-left: 25rpx
+}
+
+/* 页面样式 */

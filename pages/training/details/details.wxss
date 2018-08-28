@@ -5,3 +5,53 @@
  * 作者author：郑维一
  * 公司网站site：www.epearth.com
 */
+
+/* 重写全局样式 */
+.xipu-card__page {
+  padding: 15rpx 20rpx
+}
+
+.xipu-card__default {
+  flex-direction: column;
+  margin-bottom: 15rpx
+}
+
+.xipu-card__bd {
+  flex-direction: column;
+}
+
+.xipu-icon__right {
+  margin-left: 25rpx
+}
+
+.weui-btn {
+  margin-top: 15rpx;
+  background-color: #FDFEFF!important;
+}
+
+/* 卡片内组件 */
+.flex-hd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rpx;
+  border-bottom: 1rpx #EEE solid
+}
+
+.flex-hd__item {
+  margin-bottom: 15rpx;
+}
+
+.flex-ft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20rpx;
+}
+
+/* 页面布局 */
+.button-sp-area{
+    padding-top: 20rpx;
+}

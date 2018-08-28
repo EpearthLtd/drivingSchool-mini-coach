@@ -20,7 +20,7 @@
     <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:for="{{item.students}}" wx:key="{{item.id}}" bindtap='callStudent' data-tel='{{item.tel}}'>
       <view class="weui-cell__bd">{{item.studentName}}</view>
       <view class="weui-cell__ft">
-        <image class='cell-icon' src='../../../images/phone-gray.svg'></image>
+        <image class='xipu-icon__right' src='../../../images/phone-gray.svg'></image>
       </view>
     </view>
   </view>

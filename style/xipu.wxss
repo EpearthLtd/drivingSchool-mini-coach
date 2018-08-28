@@ -36,10 +36,7 @@
 }
 
 .xipu-card__default {
-  background: -webkit-linear-gradient(left, #fff , #f2f2f2); /* Safari 5.1 - 6.0 */
-  background: -o-linear-gradient(right, #fff , #f2f2f2); /* Opera 11.1 - 12.0 */
-  background: -moz-linear-gradient(right, #fff , #f2f2f2); /* Firefox 3.6 - 15 */
-  background: linear-gradient(to right, #fff , #f2f2f2); /* 标准的语法 */
+  background: #FFF;
   border-radius: 15rpx;
   padding: 20rpx;
   box-shadow: 0 8rpx 20rpx 4rpx rgba(242, 242, 242, 1);
@@ -78,6 +75,29 @@
   align-items: center
 }
 
+.xipu-card__hd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.xipu-card__hd-item {
+  margin-bottom: 15rpx;
+}
+
+.xipu-card__bd {
+  display: flex
+}
+
+.xipu-card__bd-item {
+  flex: 1;
+  margin-top: 12rpx;
+  margin-bottom: 8rpx;
+  display: flex;
+  justify-content: space-between
+}
+
 .xipu-flex__center {
   display: flex;
   justify-content: space-around;
@@ -98,6 +118,13 @@
   width: 35rpx;
   margin-top: 5rpx;
   margin-left: 15rpx;
+}
+
+.xipu-icon__right {
+  margin-left: 10rpx;
+  vertical-align: middle;
+  width:40rpx; 
+  height: 40rpx;
 }
 
 .xipu-inline__text {
