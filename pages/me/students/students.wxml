@@ -16,8 +16,10 @@
         <image src='../../../images/{{item.gender==0?"male":"female"}}.svg' class='xipu-icon__gender'></image>
       </view>
 
+      <text class='color-gray'>{{item.progressName}}</text>
+
       <view>
-        <image class='xipu-icon__right' src='../../../images/phone-gray.svg'></image>
+        <image class='xipu-icon__right' src='../../../images/phone-gray.svg' data-tel='{{item.tel}}' bindtap='callStudent'></image>
       </view>
 
     </view>

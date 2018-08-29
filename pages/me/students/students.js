@@ -14,8 +14,8 @@ Page({
    */
   data: {
     students: [
-      { id: "123", name: "郑维一", tel: "13500000000", gender: 0 },
-      { id: "321", name: "女生", tel: "13400000000", gender: 1 },
+      { id: "123", name: "郑维一", tel: "13500000000", gender: 0, progress: 1, progressName: "科目二" },
+      { id: "321", name: "女生", tel: "13400000000", gender: 1, progress: 2, progressName: "科目三" },
     ]
   },
 
@@ -73,5 +73,15 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  /**
+   * 拨打学员电话
+   */
+  callStudent: function (event) {
+    console.log('拨打学员电话' + event.currentTarget.dataset.tel)
+    wx.makePhoneCall({
+      phoneNumber: event.currentTarget.dataset.tel,
+    })
   }
 })

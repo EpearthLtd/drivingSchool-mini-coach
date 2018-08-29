@@ -71,7 +71,6 @@ App({
         "name": "王三",
         "gender": 0,
         "tel": "13500000000",
-        "licencePlate": "川AS110学",
         "avatarSrc": "https://develop.epearth.com/images/avatar.jpg",
         "students": 0
       }
@@ -91,13 +90,11 @@ App({
       "name": "{郑维一}",
       "idNumber":"{510111111111111111}",
       "tel": "13500000000",
-      "userStatus": 1,            //默认为0
-      "siteId": "123",            //userStatus大于0时返回该属性
-      "siteName": "{训练场名称}",  //userStatus大于0时返回该属性
-      "schoolName": "{四川大学锦城学院}",//userStatus大于0时返回该属性
-      "licenceType": 5,           //userStatus大于0时返回该属性
-      "progress": 0,              //userStatus大于0时返回该属性
-      "coachId": "00280021002",   //userStatus大于0时返回该属性
+      "siteId": "123",
+      "siteName": "{训练场名称}",
+      "licenceType": 5,
+      "licencePlate": "川AS110学",
+      "coachId": "00280021002",
     },
     coachInfo: null,
     dateList: []

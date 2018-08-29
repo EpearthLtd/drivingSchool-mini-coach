@@ -42,8 +42,8 @@
     <view class='xipu-card__bd-item'>
       <text>{{item.studentName}}</text>
       <view>
-        <image class='xipu-icon__right' src='../../../images/phone-gray.svg'></image>
-        <image class='xipu-icon__right' src='../../../images/delete-gray.svg'></image>
+        <image class='xipu-icon__right' src='../../../images/phone-gray.svg' data-tel='{{item.tel}}' bindtap='callStudent'></image>
+        <image class='xipu-icon__right' src='../../../images/delete-gray.svg' bindtap='clickDelete'></image>
       </view>
     </view>
   </view>

@@ -14,10 +14,6 @@
     <view class="weui-cell__bd">身份证号</view>
     <view class="weui-cell__ft">{{personalInfo.idNumber!=null?personalInfo.idNumber:'未绑定身份信息'}}</view>
   </view>
-  <view class="weui-cell" wx:if="{{personalInfo.schoolName!=null}}">
-    <view class="weui-cell__bd">学校</view>
-    <view class="weui-cell__ft">{{personalInfo.schoolName}}</view>
-  </view>
 </view>
 
 <view class="weui-cells">
@@ -25,13 +21,13 @@
     <view class="weui-cell__bd">训练场</view>
     <view class="weui-cell__ft">{{personalInfo.siteName}}</view>
   </view>
-  <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:if="{{personalInfo.licenceTypeName!=null}}">
-    <view class="weui-cell__bd">驾照</view>
-    <view class="weui-cell__ft">{{personalInfo.licenceTypeName}}</view>
+  <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__bd">教学驾照</view>
+    <view class="weui-cell__ft">{{personalInfo.licenceType!=null?personalInfo.licenceTypeName:'未获取到教学驾照'}}</view>
   </view>
-  <view class="weui-cell weui-cell_access" hover-class="weui-cell_active" wx:if="{{personalInfo.progress!=null}}">
-    <view class="weui-cell__bd">进度</view>
-    <view class="weui-cell__ft">{{personalInfo.progressName}}</view>
+  <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+    <view class="weui-cell__bd">车牌号</view>
+    <view class="weui-cell__ft">{{personalInfo.licencePlate!=null?personalInfo.licencePlate:'未获取到车牌号'}}</view>
   </view>
 </view>
 

@@ -29,6 +29,14 @@ Page({
   onLoad: function (options) {
     var that = this
 
+    // 获取传入的训练ID
+    var thatTrainingId
+    if (options.id) {
+      thatTrainingId = options.id
+      console.log('打开训练详情页，获取到传入的训练ID值为：' + thatTrainingId)
+    }
+    // TODO 通过编号加载训练信息
+
     this.setData({
       rootDomain: globalRootDomain,
       sourceDomain: globalSourceDomain,
@@ -156,5 +164,26 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  /**
+   * 拨打学员电话
+   */
+  callStudent: function (event) {
+    console.log('拨打学员电话' + event.currentTarget.dataset.tel)
+    wx.makePhoneCall({
+      phoneNumber: event.currentTarget.dataset.tel,
+    })
+  },
+
+  /**
+   * 点击删除
+   */
+  clickDelete: function (event) {
+    console.log('点击删除按钮')
+    wx.showModal({
+      title: '从训练中删除该学员',
+      content: '此操作将会取消该学员对本次训练的预约',
+    })
   }
 })
