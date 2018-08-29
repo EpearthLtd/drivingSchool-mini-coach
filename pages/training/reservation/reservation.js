@@ -93,9 +93,9 @@ Page({
     // 页面初始化 options为页面跳转所带来的参数
     // 加载近4天日期
     this.setData({
-      dateList: this.getDates(4)
+      dateList: this.getDates(5)
     })
-    console.log(this.getDates(4))
+    console.log(this.data.dateList)
     // TODO 加载未来3天的课程
     console.log(this.data.classList)
 
@@ -297,6 +297,26 @@ Page({
         },
       })
     }
+  },
+
+  /**
+   * 点击训练的“编辑”按钮
+   */
+  clickEdit: function(e) {
+    wx.navigateTo({
+      url: '../details/details?id=' + e.currentTarget.dataset.id,
+    })
+    console.log('打开训练详情页，训练ID为' + e.currentTarget.dataset.id)
+  },
+
+  /**
+   * 点击添加按钮
+   */
+  clickAdd: function() {
+    wx.showModal({
+      title: '课程发布功能开发中',
+      content: '暂时由驾校统一安排、发布训练课程，如有需要请与驾校联系',
+    })
   }
 
 })

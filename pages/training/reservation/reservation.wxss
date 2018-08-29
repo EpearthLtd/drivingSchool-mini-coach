@@ -92,7 +92,26 @@ swiper{
   overflow-x: hidden;
 }
 
-/* 覆盖全局card边距 */
-.card {
-  padding: 20rpx;
+/* "添加"按钮 */
+.button-add-area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+
+.button-add {
+  width: 200rpx;
+  height: 200rpx;
+  line-height: 200rpx;
+  font-size: 100rpx;
+  font-weight: 100;
+  color: #666
+}
+
+.button-add-text {
+  padding-top: 30rpx;
+  color: #CCC
 }

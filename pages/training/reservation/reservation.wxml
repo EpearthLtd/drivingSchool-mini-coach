@@ -15,6 +15,8 @@
     </text>
     <text class="swiper-tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="clickTab">{{dateList[3].dates}}\n{{dateList[3].week}}
     </text>
+    <text class="swiper-tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="clickTab">{{dateList[4].dates}}\n{{dateList[4].week}}
+    </text>
 </view>
 
 <swiper current="{{currentTab}}" duration="300" bindchange="swiperTab">
@@ -36,10 +38,16 @@
                 </block>
               </view>
               <view class='flex-ft'>
-                <button class="button-edit" size="mini">编辑</button>
+                <button class="button-edit" size="mini" bindtap='clickEdit' data-id='{{item.id}}'>编辑</button>
               </view>
             </view>
         </scroll-view>
       </swiper-item>
     </block>
+    <swiper-item wx:if="{{classList[4]==null}}">
+      <view class='button-add-area'>
+        <button class='button-add' bindtap='clickAdd'>+</button>
+        <text class='button-add-text'>课程尚未发布，点击发布课程</text>
+      </view>
+    </swiper-item>
 </swiper>
