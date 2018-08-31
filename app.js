@@ -80,14 +80,14 @@ App({
   },
 
   globalData: {
-    rootDomain: 'https://develop.epearth.com',
-    sourceDomain: 'https://develop.epearth.com',
-    appName: '{APP名称}',
+    rootDomain: 'https://agan.request.epearth.com',
+    sourceDomain: 'https://agan.src.epearth.com',
+    appName: '阿甘教练',
     userInfo: null, // 微信返回的用户信息
     userPersonalInfo: {
       "uid": "1",
       "type": [0,0,0,1],
-      "name": "{郑维一}",
+      "name": "{真实姓名}",
       "idNumber":"{510111111111111111}",
       "tel": "13500000000",
       "siteId": "123",

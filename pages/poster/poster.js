@@ -7,6 +7,8 @@
 */
 
 const app = getApp();
+var globalRootDomain = app.globalData.rootDomain;
+var globalSourceDomain = app.globalData.sourceDomain;
 
 Page({
 
@@ -30,8 +32,6 @@ Page({
    */
   onLoad: function (options) {
     // 设置全局根域名
-    var globalRootDomain = app.globalData.rootDomain;
-    var globalSourceDomain = app.globalData.sourceDomain;
     this.setData({
       rootDomain: globalRootDomain,
       sourceDomain: globalSourceDomain,
